@@ -1,0 +1,52 @@
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px
+}
+
+ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    /*      왜 150px으로 설정해야되는지 모르겠음 이해가 안가,,,*/
+
+}
+
+#grid ol {
+    padding-left: 32px;
+
+}
+
+/*        이렇게 해야 더 확실한 ol이 잡힌다.*/
+#grid #article {
+    padding-left: 25px;
+}
+
+/*        반응형 웹*/
+@media(max-width:800px) {
+
+    #grid {
+        display: block;
+
+
+    }
+
+    ol {
+        border-right: none;
+
+
+    }
+
+    h1 {
+        border-bottom: none;
+    }
+}
